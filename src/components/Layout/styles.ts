@@ -10,20 +10,27 @@ export const Container = styled.div`
   }
 
   @media (min-width: 1180px) {
-    > main {
-      margin: 0 30px;
-      display: flex;
-      justify-content: center;
-      
-    }
-
     > span {
       margin-top: 52px;
       padding: 8px 0;
     }
 
+    > main {
+      margin: 0 30px;
+      display: flex;
+      justify-content: center;
+    }
+
     .left-column,
-    .right-column, 
+    .right-column,
+    .ad-banner {
+      display: none;
+    }
+  }
+
+  @media (min-width: 1180px) {
+    .left-column,
+    .right-column,
     .ad-banner {
       display: unset;
     }
@@ -31,11 +38,5 @@ export const Container = styled.div`
     .middle-column {
       margin: 0 25px 16px;
     }
-  }
-
-  .left-column,
-  .right-column,
-  .ad-banner {
-    display: none;
   }
 `;
